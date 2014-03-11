@@ -1,5 +1,5 @@
 /*
- * jQuery Reveal Plugin 1.0
+ * jQuery Reveal Plugin 1.1
  * www.ZURB.com
  * Copyright 2010, ZURB
  * Free to use under the MIT license.
@@ -8,7 +8,7 @@
 
 
 (function ($) {
-  $('a[data-reveal-id]').live('click', function (event) {
+  $('a[data-reveal-id]').on('click', function (event) {
     event.preventDefault();
     var modalLocation = $(this).attr('data-reveal-id');
     $('#' + modalLocation).reveal($(this).data());
